@@ -26,6 +26,14 @@ ul{
     padding: 0;
 }
 
+.button1{
+    height: 35px;
+    border: 0px;
+    background: #4290f7;
+    padding: 0 20px;
+    color: #fff;
+}
+
 /*header*/
 header a{
     text-decoration: none;
@@ -66,28 +74,30 @@ header nav{
 /*showcase*/
 #showcase{
     min-height: 400px;
-    background:url("../images/showcase2.jpg") no-repeat 0; /*might need to change this bc the text on
-                                                            the keyboard covers some of the font weird*/
+    background:url("../images/showcase2.jpg") no-repeat 0 -300px;
     text-align: center;
+
 }
 
 #showcase h1{
-    margin-top: 100px;
+    margin-top: 150px;
     font-size: 50px;
     margin-bottom: 10px;
 }
 
-#newsletter{
-    background-color: #121418;
-    padding: 15px;
+#newsletter {
+    padding: 0px;
+    background: #121418;
 }
 
+/*newsletter*/
 #newsletter h1{
     float: left;
 }
 
-#newsletter form{
+#newsletter form {
     float: right;
+    margin-bottom: 20px;
 }
 
 #newsletter input[type="email"]{
@@ -96,3 +106,29 @@ header nav{
     width: 250px;
 }
 
+/*boxes */
+
+#boxes { /*this is the DIV box id*/
+    margin-top: 20px;
+}
+
+/*this is the box class inside the div*/
+#boxes .box{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 20px;
+}
+
+#boxes .box img{
+    width: 90px;
+    height: 90px;
+}
+
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color:#4290f7;
+    background-color: #121418;
+    text-align: center;
+}
