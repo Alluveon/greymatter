@@ -159,6 +159,45 @@ ul#services h3{
     color: #4290f7;
 }
 
+#services .box2 {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+  
+}
+
+/*contact us page*/
+
+#contact {
+
+    padding: 20px;
+}
+.label {
+    font-size: 20px;
+    display: block;
+    margin: 15px 0px;
+}
+
+#contact input{
+    width: 300px;
+    padding: 10px;
+
+}
+
+#contact textarea {
+    width: 500px;
+    height: 200px;
+}
+
+#contact button{
+    width: 500px;
+
+    margin-top: 20px;
+    font-size: 15px;
+}
+
 /*footer*/
 footer{
     padding: 20px;
