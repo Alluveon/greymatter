@@ -52,7 +52,7 @@ header a{
     font-size: 18px;
 }
 
-header a:hover{
+header a:h over{
     color: #4290f7;
     font-weight: bold;
 }
@@ -181,7 +181,7 @@ ul#services h3{
 }
 
 #contact input{
-    width: 300px;
+    width: 490px;
     padding: 10px;
 
 }
@@ -190,14 +190,19 @@ ul#services h3{
     width: 500px;
     height: 200px;
 }
-
+/*
 #contact button{
     width: 500px;
 
     margin-top: 20px;
     font-size: 15px;
 }
+*/
 
+form#contact .button1{
+    width: 500px;
+    text-align: center;
+}
 /*footer*/
 footer{
     padding: 20px;
@@ -205,4 +210,55 @@ footer{
     color:#4290f7;
     background-color: #121418;
     text-align: center;
+}
+
+/*media query*/
+@media(max-width: 786px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar
+    #services{
+        float: none;
+        text-align: center;
+        width: 100%;    
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top: 70px;
+    }
+
+    #newsletter button {
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"]{
+        width: 100%; 
+        margin-bottom: 5px;
+    }
+/*there is probably a way to simplify this, i will explore this on another project; 
+    currently feel like there's some redundant code or things that can be condensed/changed
+    to make sure the features will work how i want
+    can't get submit button to center text, for some reason*/ 
+
+    #contact form .quote input, .quote textarea, .button1{
+        width: 100%;
+        text-align:center;
+        
+    }
+
+
+    #services .box2{
+        float: none;
+        width: 30%;
+    }
 }
